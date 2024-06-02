@@ -20,6 +20,12 @@ import { BoostrapModule } from './shared/boostrap/boostrap.module';
 import { MaterialModule } from './shared/material/material.module';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ReturnPolicyComponent } from './return-policy/return-policy.component';
+import { TrackOrderComponent } from './track-order/track-order.component';
+import { CartComponent } from './cart/cart.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { PaymentComponent } from './payment/payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,20 +33,26 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     HomeComponent,
     AboutusComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ReturnPolicyComponent,
+    TrackOrderComponent,
+    CartComponent,
+    WishlistComponent,
+    OrderSummaryComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule,
     FormsModule,
+    ReactiveFormsModule,
+    NgbModule,
     SlickCarouselModule,
     CarouselModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    HttpClientModule,
     BoostrapModule,
     MaterialModule
   ],

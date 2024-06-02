@@ -1,27 +1,36 @@
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s;
+.product-card {
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+/* Ensure the filter section and product cards adapt well on smaller screens */
+@media (max-width: 768px) {
+  .product-card {
+    margin-bottom: 20px;
   }
-  
-  .card:hover {
-    transform: scale(1.05);
+
+  .icons {
+    gap: 5px;
   }
-  
+
   .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    height: auto;
   }
-  
-  .btn-primary {
-    background-color: #008080;
-    border-color: #008080;
-  }
-  
-  .btn-primary:hover {
-    background-color: #005151;
-    border-color: #005151;
-  }
-  
+}
