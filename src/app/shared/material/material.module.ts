@@ -22,6 +22,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   imports: [
     MatButtonModule,
@@ -42,7 +43,7 @@ import {MatListModule} from '@angular/material/list';
     CdkStepperModule,
     MatSelectModule,
     MatCardModule,MatGridListModule,MatListModule,MatTableModule,
-   
+    MatMenuModule
   ],
   exports: [
     MatButtonModule,
@@ -63,6 +64,7 @@ import {MatListModule} from '@angular/material/list';
     CdkStepperModule,
     MatSelectModule,
     MatCardModule,MatGridListModule,MatListModule,MatTableModule,
+    MatMenuModule
   ],
   providers: [
     {

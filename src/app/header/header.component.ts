@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +11,18 @@ export class HeaderComponent {
 
   toggleLogin() {
     this.isLoggedIn = !this.isLoggedIn;
+  }
+  isSmallScreen: boolean = false; // Default value
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit(): void {
+    // Check for small screen breakpoints
+    this.breakpointObserver.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small
+    ]).subscribe(result => {
+      this.isSmallScreen = result.matches;
+    });
   }
 }
