@@ -20,4 +20,114 @@ export class HomeComponent {
     config.keyboard = true; // Set whether keyboard navigation is enabled (default is true)
     config.pauseOnHover = true; // Set whether auto-rotation should pause on mouse hover (default is true)
   }
+
+  categories = [
+    { name: 'Health Food and Drinks', image: 'https://cdn01.pharmeasy.in/dam/discovery/categoryImages/7af974da68693a0996f5b1c3e8ceaeaf.png?f=png?dim=256x0' },
+    { name: 'Skin Care', image: 'https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ce48d6d71ace3892945f0b0a64c1f0e9.png?f=png?dim=256x0' },
+    { name: 'Mother and Baby Care', image: 'https://cdn01.pharmeasy.in/dam/discovery/categoryImages/0de65bec9fc2342b978b739fa78a6095.png?f=png?dim=256x0' },
+    { name: 'Home Care', image: 'https://cdn01.pharmeasy.in/dam/discovery/categoryImages/dc96175686f135b5a22d1e57165d0246.png?f=png?dim=256x0' },
+    { name: 'Summer Store', image: 'https://cdn01.pharmeasy.in/dam/discovery/categoryImages/e9ceb38252cd333f910b383ee75004c0.png?f=png?dim=256x0' }
+  ];
+  slideConfig = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  products = [
+    { title: 'MuscleBlaze Creatine Monohydrate', originalPrice: 300, discountedPrice: 240, image: 'https://img4.hkrtcdn.com/28161/prd_2816093-MuscleBlaze-PRE-Workout-200-Xtreme-0.22-lb-Fruit-Punch_c_m.jpg', rating: 2.5 },
+  
+    { title: 'Protinex Nutritional Drink ', originalPrice: 100, discountedPrice: 80, image: 'https://cdn01.pharmeasy.in/dam/products_otc/373983/protinex-nutritional-drink-mix-for-adults-for-everyday-health-with-high-protein-rich-chocolate-400g-2-1685706536.jpg?dim=1440x0', rating: 4.5 },
+   { title: 'Protinex Original Adult Health', originalPrice: 200, discountedPrice: 160, image: 'https://cdn01.pharmeasy.in/dam/products_otc/383035/protinex-original-adult-health-nutritional-drink-mix-for-recovery-with-high-protein-250-g-2-1685706499.jpg?dim=700x0&dpr=1&q=100', rating: 5 },
+    { title: 'Liveasy Wellness Calcium Magnesium ', originalPrice: 250, discountedPrice: 200, image: 'https://cdn01.pharmeasy.in/dam/products_otc/T22634/liveasy-wellness-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-tabs-2-1661760061.jpg?dim=700x0&dpr=1&q=100', rating: 4 },
+    { title: 'MuscleBlaze Creatine Monohydrate', originalPrice: 300, discountedPrice: 240, image: 'https://img4.hkrtcdn.com/28161/prd_2816093-MuscleBlaze-PRE-Workout-200-Xtreme-0.22-lb-Fruit-Punch_c_m.jpg', rating: 2.5 },
+  
+  ];
+
+  slideConfigProduct = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  getStarClass(rating: number, star: number): string {
+    if (rating >= star) {
+      return 'fa-star';
+    } else if (rating >= star - 0.5) {
+      return 'fa-star-half-alt';
+    } else {
+      return 'fa-star-o';
+    }
+  }
+
+
+  carouselConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false
+  };
+
+  testimonials = [
+    { quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', author: 'John Doe' },
+    { quote: 'Nulla facilisi. Mauris efficitur felis in nunc elementum ultrices.', author: 'Jane Smith' },
+    { quote: 'Vestibulum cursus tortor at mi efficitur, eu gravida metus viverra.', author: 'David Johnson' }
+  ];
+
+  afterChange(e: any) {
+    console.log('afterChange', e);
+  }
 }

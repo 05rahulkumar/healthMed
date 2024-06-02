@@ -19,6 +19,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSelectModule} from '@angular/material/select';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   imports: [
     MatButtonModule,
@@ -37,7 +40,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatProgressBarModule,
     MatChipsModule,
     CdkStepperModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCardModule,MatGridListModule,MatListModule,MatTableModule,
+   
   ],
   exports: [
     MatButtonModule,
@@ -56,7 +61,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatProgressBarModule,
     MatChipsModule,
     CdkStepperModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCardModule,MatGridListModule,MatListModule,MatTableModule,
   ],
   providers: [
     {
