@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .btn-primary {
+    background-color: #008080;
+    border-color: #008080;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005151;
+    border-color: #005151;
+  }
+  
