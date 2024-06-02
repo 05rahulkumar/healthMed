@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -24,7 +23,10 @@ import { MaterialModule } from './shared/material/material.module';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent,
+    AboutusComponent,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,
