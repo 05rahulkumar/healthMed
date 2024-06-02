@@ -18,15 +18,16 @@ import { ToastrModule } from 'ngx-toastr';
 //shared
 import { BoostrapModule } from './shared/boostrap/boostrap.module';
 import { MaterialModule } from './shared/material/material.module';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactUsComponent,
     AboutusComponent,
-    LoginSignupComponent
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
