@@ -1,0 +1,10 @@
+<section>
+    <div class="container">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide *ngFor="let image of images">
+      <img [src]="image.src" [alt]="image.alt" class="d-block w-100">
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+</section>
