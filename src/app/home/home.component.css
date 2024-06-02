@@ -1,0 +1,11 @@
+.custom-carousel {
+    width: 800px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+  }
+  
+  .custom-carousel img {
+    width: 100%; /* Make images responsive to fit the carousel container */
+    height: 100%; /* Make images responsive to fit the carousel container */
+    object-fit: cover; /* Ensure images cover the entire carousel area */
+  }
+  
