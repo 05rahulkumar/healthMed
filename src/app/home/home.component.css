@@ -151,4 +151,51 @@
   font-style: italic;
 }
 
-/* wnd */
+/* end */
+
+/* section 6 */
+.container {
+  background-color: #f8f9fa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #008080; /* Teal Blue */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #006666; /* Darker Teal Blue */
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* end */

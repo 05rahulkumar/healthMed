@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hgh';
+
+  a = 0;
+  updateIncre() {
+    this.a++;
+    console.log(this.a,'this.a');
+  }
+data=',mmmm';
+  updateData(item:any){
+    console.warn(item);
+this.data=item;
+  }
 }

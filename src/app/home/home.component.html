@@ -95,3 +95,24 @@
 </div>
 </section>
 <!-- end -->
+
+<!-- section 6 -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Lab Tests by Health Concern</h2>
+  <ngb-carousel *ngIf="labTests.length">
+    <ng-template ngbSlide *ngFor="let test of labTests">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img [src]="test.image" class="card-img-top" alt="{{ test.name }}">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ test.name }}</h5>
+            <p class="card-text">{{ test.description }}</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+<!-- end -->

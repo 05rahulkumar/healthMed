@@ -130,4 +130,29 @@ export class HomeComponent {
   afterChange(e: any) {
     console.log('afterChange', e);
   }
+
+
+  labTests = [
+    {
+      name: 'Diabetes Test',
+      image: 'assets/img/diabetes-test.jpg',
+      description: 'Comprehensive diabetes checkup'
+    },
+    {
+      name: 'Heart Health',
+      image: 'assets/img/heart-health.jpg',
+      description: 'Complete heart health assessment'
+    },
+    {
+      name: 'Liver Function',
+      image: 'assets/img/liver-function.jpg',
+      description: 'Detailed liver function tests'
+    },
+    {
+      name: 'Kidney Health',
+      image: 'assets/img/kidney-health.jpg',
+      description: 'Kidney function and health tests'
+    }
+    // Add more lab tests as needed
+  ];
 }

@@ -26,6 +26,9 @@ import { CartComponent } from './cart/cart.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { PaymentComponent } from './payment/payment.component';
+import { TestComponent } from './test/test.component';
+import { ColorDirective } from './color.directive';
+import { ColorPipe } from './color.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +42,10 @@ import { PaymentComponent } from './payment/payment.component';
     CartComponent,
     WishlistComponent,
     OrderSummaryComponent,
-    PaymentComponent
+    PaymentComponent,
+    TestComponent,
+    ColorDirective,
+    ColorPipe
   ],
   imports: [
     BrowserModule,

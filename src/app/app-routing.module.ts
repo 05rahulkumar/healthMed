@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { PaymentComponent } from './payment/payment.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {path:'',pathMatch:'full',redirectTo:'home'},
@@ -25,7 +26,8 @@ const routes: Routes = [
    {path:'cart', component:CartComponent},
    {path:'wishlist', component:WishlistComponent},
    {path:'order-summary',component:OrderSummaryComponent},
-   {path:'payment',component:PaymentComponent}
+   {path:'payment',component:PaymentComponent},
+   {path:'test',component:TestComponent},
 ];
 
 @NgModule({
